@@ -45,9 +45,10 @@ body{
 }
 
 .nav-menu-item{
-    font-size: 27px;
-    margin: 0 17px;
-    line-height: 80px;
+    font-size: 18px;
+    margin: 0 10px;
+    margin-top: 15px;
+    line-height: 32px;
     text-transform: uppercase;
     width: max-content;
 }
@@ -60,14 +61,14 @@ body{
 }
 
 .nav-menu-link{
-    padding: 12px 23px;
+    padding: 8px 12px;
     border-radius: 7px;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -75,9 +76,9 @@ body{
     color: white;
     background-color: none;
     border: none;
-    font-size: 37px;
-    padding: 0 27px;
-    line-height: 72px;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
     display: none;
 }
 
@@ -85,11 +86,12 @@ body{
         body{
             /* font-family: 'Fasthand', cursive; */
             padding: 90px 20px 0;
+            padding-top: 70px;
         }
 
         .header{
-            background-color: blueviolet;
-            height: 70px;
+            /* background-color: blueviolet; */
+            height: 60px;
             position: fixed;
             width: 100%;
             top: 0;
@@ -101,23 +103,32 @@ body{
             margin-right: 20px;
             list-style: none;
             align-items: center;
-            font-size: 17px;
-            padding: 0 20px;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 0 40px;
             line-height: 60px;
+        }
+        
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            max-width: 992px;
+            margin: 0 auto;
         }
 
         .nav-menu{
+            display: flex;
             flex-direction: column;
-            margin-right: 20px;
+            margin-right: 40px;
             list-style: none;
             align-items: center;
             background-color: blueviolet;
             position: fixed;
             left: 0;
-            top: -10px;
+            top: 60px;
             width: 100%;
-            padding: 25px 0;
-            height: calc(100% -72px);
+            padding: 20px 0;
+            height: calc(100% -60px);
             overflow:-y: auto;
             left: 100%;
             transition: 0.5s;
@@ -126,7 +137,7 @@ body{
         .nav-menu-item{
             font-size: 20px;
             margin: 0 13px;
-            line-height: 70px;
+            line-height: 7px;
             text-transform: uppercase;
             width: max-content;
         }
