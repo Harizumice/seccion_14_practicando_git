@@ -49,11 +49,12 @@ body{
     margin: 0 10px;
     margin-top: 15px;
     line-height: 32px;
+    border-radius: 7px;
     text-transform: uppercase;
     width: max-content;
 }
 
-.nav-menu-link:hover, 
+.nav-menu-item:hover,
 .nav-menu-link-active{
     background: gold;
     color: blueviolet;
@@ -135,8 +136,8 @@ body{
         }
 
         .nav-menu-item{
-            font-size: 20px;
-            margin: 0 13px;
+            font-size: 18px;
+            margin: 0 10px;
             line-height: 7px;
             text-transform: uppercase;
             width: max-content;
@@ -145,15 +146,16 @@ body{
         .nav-menu-item:hover,
         .nav-menu-link-active{
             background-color: none;
-            color: gold;
+            color: goldenrod;
+
         }
 
         .nav-toggle{
             color: white;
             background: none;
             border: none;
-            font-size: 27px;
-            padding: 0 13px;
+            font-size: 3px;
+            padding: 0 20px;
             line-height: 60px;
             display: block;
             cursor: pointer;
