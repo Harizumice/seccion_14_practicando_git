@@ -1,0 +1,150 @@
+/* Formatear los estilos predeterminados */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: blueviolet;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    padding: 90px 20px 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu-link{
+    color: gold;
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 37px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 40px;
+    line-height: 80px;
+    color: darkmagenta;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 27px;
+    margin: 0 17px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link:hover, 
+.nav-menu-link-active{
+    background: gold;
+    color: blueviolet;
+    transition: 0.7s;
+}
+
+.nav-menu-link{
+    padding: 12px 23px;
+    border-radius: 7px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-toggle{
+    color: white;
+    background-color: none;
+    border: none;
+    font-size: 37px;
+    padding: 0 27px;
+    line-height: 72px;
+    display: none;
+}
+
+@media (max-width: 768px){
+        body{
+            /* font-family: 'Fasthand', cursive; */
+            padding: 90px 20px 0;
+        }
+
+        .header{
+            background-color: blueviolet;
+            height: 70px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .logo{
+            flex-direction: column;
+            margin-right: 20px;
+            list-style: none;
+            align-items: center;
+            font-size: 17px;
+            padding: 0 20px;
+            line-height: 60px;
+        }
+
+        .nav-menu{
+            flex-direction: column;
+            margin-right: 20px;
+            list-style: none;
+            align-items: center;
+            background-color: blueviolet;
+            position: fixed;
+            left: 0;
+            top: -10px;
+            width: 100%;
+            padding: 25px 0;
+            height: calc(100% -72px);
+            overflow:-y: auto;
+            left: 100%;
+            transition: 0.5s;
+        }
+
+        .nav-menu-item{
+            font-size: 20px;
+            margin: 0 13px;
+            line-height: 70px;
+            text-transform: uppercase;
+            width: max-content;
+        }
+
+        .nav-menu-item:hover,
+        .nav-menu-link-active{
+            background-color: none;
+            color: gold;
+        }
+
+        .nav-toggle{
+            color: white;
+            background: none;
+            border: none;
+            font-size: 27px;
+            padding: 0 13px;
+            line-height: 60px;
+            display: block;
+            cursor: pointer;
+        }
+    }
